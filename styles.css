@@ -5,12 +5,6 @@ body {
     color: #282828;
 }
 
-/*
-Challenge:
-1. Get this layout looking like the 
-   screenshots on the slide.
-*/  
-
 header {
     background-color: #282828;
     color: whitesmoke;
@@ -45,7 +39,34 @@ h1 {
 
 .item-img {
     width: 100%;
+    /* vertical-align: bottom; */
+    display: block;
 }
 .caption {
     margin: 0 25px;
+    display: flex;
+    gap:20px;
+    justify-content: space-between;
+}
+
+.item {
+    position:relative;
+}
+
+.img-banner {
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #cd6858;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+button {
+    border: none;
+    background-color: #cd6858;
+    padding: 10px 15px;
+    color: whitesmoke;
+    cursor: pointer;
+    align-self: center; /**stretch by default*/
 }
